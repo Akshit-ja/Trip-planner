@@ -9,7 +9,7 @@ export const AIPlanner = () => {
   const [endDate, setEndDate] = useState('');
   const [generatedContent, setGeneratedContent] = useState('');
   const [loading, setLoading] = useState(false);
-  const genAI = new GoogleGenerativeAI('AIzaSyBsn-rcxA-DXS6bnIKiboMVLn2U2cMy9SY');
+  const genAI = new GoogleGenerativeAI('your-api-key');
 
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
